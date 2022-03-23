@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+.header{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    background-color: rgb(209, 209, 209);
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.search{
+    width: 500px;
+    margin: 8px 0px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+#login{
+    width: 55px;
+    margin: 10px 0px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(63, 160, 252);
+    color: white;
+    box-shadow: 3px 3px black;
+}
+.container{
+    display: flex;
+    margin: 20px auto;
+    width: 1100px;
+}
+.flex-1{
+    flex: 2;
+    margin: 0px 20px;
+}
+.bar{
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px 10px 20px 10px;
+    display: flex;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.definition{
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+}
+.flex-2{
+    flex: 1;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    height: 100px;
+}
+.btn{
+    margin: 10px 0px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(63, 252, 72);
+    color: black;
+    box-shadow: 3px 3px black;
+    padding: 5px;
+    width: 200px;
+}
+.likes{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(224, 252, 63);
+    color: black;
+    box-shadow: 3px 3px black;
+    padding: 5px;
+    margin-top: 10px;
+}

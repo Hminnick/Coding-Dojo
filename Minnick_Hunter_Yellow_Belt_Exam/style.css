@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.liveScores {
+    display: flex;
+    width: 1100px;
+    margin: 0px auto;
+    padding: 15px;
+}
+.scores,#scoreHeader {
+    flex: 1;
+}
+.headerColor {
+    background-color: black;
+}
+.header {
+    display: flex;
+    width: 1100px;
+    margin: 0px auto;
+    color: white;
+}
+.rightrow {
+    flex: 1;
+    margin-top: 5px;
+}
+.leftrow {
+    flex: 4;
+    display: flex;
+    align-items: center;
+}
+#dsnnHeader{
+    background-color: red;
+    padding: 5px 20px;
+    transform: skew(-10deg);
+}
+.sport {
+flex: 1;
+margin: auto 35px;
+}
+.menuItem {
+    height: 35px;
+    margin: 0px 5px;
+}
+#page {
+    background-color: rgb(223, 223, 223);
+    height: 100vh;
+}
+.container {
+    display: flex;
+    width: 1025px;
+    margin: 0px auto;
+    padding: 30px 112px 30px 30px;
+}
+
+.sidebar {
+    flex: 1;
+    margin-right: 40px;
+}
+.side-1,.side-2,.side-3 {
+    background-color: white;
+    padding: 15px;
+    border: 0px white solid;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+#side-1-header {
+    border-bottom: 2px black solid;
+    margin-bottom: 15px;
+    padding-bottom:10px ;
+}
+.description-side {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#side-2-header,#side-3-header {
+    font-weight: bold;
+}
+.signin {
+    display: flex;
+}
+#in {
+    flex: 1;
+    margin: 10px 5px;
+    padding: 5px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border: 3px black solid;
+    box-shadow: 3px 3px black;
+}
+#up {
+    flex: 1;
+    margin: 10px 5px;
+    padding: 5px;
+    border: 3px black solid;
+    box-shadow: 3px 3px black;
+    background-color: white;
+}
+.subscribe{
+    width: 170px;
+    margin: 10px;
+    background-color: rgb(235, 235, 161);
+    border: 3px black solid;
+    box-shadow: 3px 3px black;
+    padding: 5px;
+}
+.content {
+    flex: 3;
+    background-color: white;
+    border-radius: 25px;
+    padding: 30px 40px;
+}
+.live {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+}
+#n-p {
+    flex: 3;
+}
+.content-header {
+    display: flex;
+    font-size: 45px;
+    font-weight: bold;
+}
+.dot {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    margin-bottom: -10px;
+}
+#live {
+    color: red;
+    margin-left: 10px;
+}
+.content-teams {
+    display: flex;
+    font-weight: bold;
+}
+#ninja,#pirate {
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.scoreboard {
+    flex: 1;
+    padding: 15px;
+    border-bottom: 3px black solid;
+    margin-bottom: 15px;
+}
+.team-info {
+    text-align: center;
+}
+#ninjas {
+    color: #189c9c;
+}
+#pirates {
+    color: #d81434;
+}
+.wl {
+    color: rgb(196, 196, 196);
+}
+.score{
+    font-size: 50px;
+    user-select: none;
+}
+#vs {
+    text-align: center;
+    margin: 80px;
+    font-size: 26px;
+}
+#time-remaining {
+    text-align: center;
+    margin-top: 150px;
+}

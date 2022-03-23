@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <div class="header">
+            <div class="dojoWeather">
+                <h1 id="dojoHeader">DojoWeather</h1>
+            </div>
+            <div class="cities">
+                <p onclick="alert('Loading weather report...')">Burbank</p>
+                <p onclick="alert('Loading weather report...')">Chicago</p>
+                <p onclick="alert('Loading weather report...')">Dallas</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="sanJose">
+                    <h1 id="sanJose">San Jose</h1>
+                </div>
+                <div class="rowTemp">
+                    <p id="rowTemp">show temperature in 
+                        <select name="temp" onchange="convert(this)">
+                            <option>°C</option>
+                            <option>°F</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="days">
+                <div class="today">
+                    <div class="dayHeader">
+                        <h1 class="day">Today</h1>
+                    </div>
+                    <img src="some_rain.png" alt="rain">
+                    <p class="weather">some rain</p>
+                    <div class="dayTemps">
+                        <p class="high" id="temp1">24°</p>
+                        <p class="low" id="temp2">18°</p>
+                    </div>
+                </div>
+                <div class="tomorrow">
+                    <div class="dayHeader">
+                        <h1 class="day">Tomorrow</h1>
+                    </div>
+                    <img src="some_sun.png" alt="sun">
+                    <p class="weather">some sun</p>
+                    <div class="dayTemps">
+                        <p class="high" id="temp3">27°</p>
+                        <p class="low" id="temp4">19°</p>
+                    </div>
+                </div>
+                <div class="friday">
+                    <div class="dayHeader">
+                        <h1 class="day">Friday</h1>
+                    </div>
+                    <img src="some_clouds.png" alt="cloudy">
+                    <p class="weather">some clouds</p>
+                    <div class="dayTemps">
+                        <p class="high" id="temp5">21°</p>
+                        <p class="low" id="temp6">16°</p>
+                    </div>
+                </div>
+                <div class="saturday">
+                    <div class="dayHeader">
+                        <h1 class="day">Saturday</h1>
+                    </div>
+                    <img src="some_sun.png" alt="sun">
+                    <p class="weather">some sun</p>
+                    <div class="dayTemps">
+                        <p class="high" id="temp7">26°</p>
+                        <p class="low"id="temp8">21°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="cookies">
+                <div class="cookie">
+                    <img id="cookiepng" src="cookie.png" alt="cookie pic">
+                </div>
+                <div class="cookieText">
+                    <h3>Stop! Cookie time</h3>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic.<a href="#">Read More...</a></p>
+                </div>
+                <div class="btn">
+                    <button id="btn" onclick="remove()">I accept</button>
+                </div>
+            </div>
+        </div>    
+    <script src="script.js"></script>
+</body>
+</html>

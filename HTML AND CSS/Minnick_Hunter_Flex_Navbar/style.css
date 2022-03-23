@@ -1,0 +1,38 @@
+.nav{
+    width: 950px;
+    height: 60px;
+    background-color: rgb(80, 65, 65);
+    display: flex;
+    margin: 0px auto;
+    padding: 2px 5px;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+
+}
+h1{
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+}
+.btn{
+    border-width: 10px black;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(116, 216, 255);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 2px auto;
+    box-shadow: 3px 3px 5px black;
+    margin-right: 10px;
+}

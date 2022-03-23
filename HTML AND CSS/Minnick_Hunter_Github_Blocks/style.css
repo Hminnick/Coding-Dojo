@@ -1,0 +1,33 @@
+.container{
+    width: 800px;
+    background-color: rgb(241, 241, 241);
+    margin: 0px auto;
+    padding: 10px 10px 10px 10px;
+}
+h1,p{
+    color: darkslategrey;
+    text-align: center;
+    font-family: sans-serif;
+}
+img{
+    height: 200px;
+}
+.row{
+    width: 770px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+}
+#row1{
+    background-color: rgb(155, 186, 243);
+    justify-content: space-around;
+}
+#row2{
+    background-color: rgb(243, 144, 144);
+    justify-content: space-evenly;
+}
+#row3{
+    background-color: white;
+    justify-content: space-around;
+}

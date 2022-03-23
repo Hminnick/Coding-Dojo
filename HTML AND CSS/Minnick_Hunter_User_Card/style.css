@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container{
+    width: 900px;
+    height: 350px;
+    margin: 50px auto;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(148, 105, 105);
+}
+.header-container{
+    width: 900px;
+    height: 90px;
+    background-color: rgb(114, 186, 199);
+    border: 3px;
+    border-color: rgb(114, 186, 199);
+}
+.user{
+    margin: 40px 0px 0px 25px;
+    height: 100px;
+    border: 100px;
+    border-color: black;
+}
+.marker{
+    height: 15px;
+    margin-right: 10px;
+}
+#gear{
+    height: 15px;
+    margin-right: 10px;
+}
+.info{
+    margin: 60px 0px 0px 15px;
+    font-family: cursive
+}
+p,.gear,h1{
+    margin: 10px;
+}

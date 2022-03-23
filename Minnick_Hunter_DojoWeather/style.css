@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+}
+.top {
+    background-color: rgb(88, 202, 255);
+    padding: 15px;
+}
+.container,.header {
+    width: 1000px;
+    margin: 0px auto;
+}
+.header {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+.dojoWeather {
+    flex: 2;
+    font-size: 25px;
+}
+#dojoHeader {
+    color: white;
+
+}
+.cities {
+    flex: 1;
+    display: flex;
+    font-size: 25px;
+    color: white;
+    justify-content: space-between;
+}
+.container {
+    margin-top: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px black solid;
+    margin: 20px auto;
+    align-items: center;
+    padding: 0px 0px;
+}
+.sanJose {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.days {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+img {
+    border-radius: 50%;
+    height: 100px;
+}
+.today,.tomorrow,.friday,.saturday {
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    width: 215px;
+}
+.dayTemps {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.day,.weather,.daytemps {
+    margin: 20px;
+}
+.high {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.low {
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+.weather{
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+.cookies {
+    border: 3px black solid;
+    padding: 10px;
+    width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+}
+#cookiepng {
+    height: 80px;
+    margin-right: 10px;
+}
+#btn {
+    width: 90px;
+    padding: 5px;
+    background-color: rgb(88, 202, 255);
+    border: 2px black solid;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+}
+.cookieText{
+    margin-right: 20px;
+}

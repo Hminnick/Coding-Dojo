@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+.page{
+    width: 800px;
+    margin: auto;
+}
+.header{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+.feedheader{
+text-align: center;
+margin: 10px;
+}
+.feed{
+    display: flex;
+}
+.avatar{
+    flex: 1;
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px auto;
+    height: 270px;
+}
+.rows{
+    flex: 3;
+    margin-left: 30px;
+}
+#jamesdoe{
+    font-size: 150%;
+}
+#img{
+    margin: 20px;
+}
+.row-1,.row-2,.row-3{
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+#numberOfLikes1,#numberOfLikes2,#numberOfLikes3{
+    margin-top: 10px;
+}
+.btn{
+    width: 50px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: rgb(223, 223, 115);
+    box-shadow: 2px 2px black;
+}
+.user{
+    flex: 1;
+}
