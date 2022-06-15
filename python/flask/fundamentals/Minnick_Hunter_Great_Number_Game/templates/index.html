@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: inline;
+            width: 1000px;
+            text-align: center;
+        }
+        h1{
+            margin: 50px 20px;
+        }
+        .box{
+            margin: 20px;
+        }
+        .takeaguess{
+            margin: 40px;
+        }
+        .popup{
+            display: inline-block;
+        }
+        .wrong{
+            display: flex;
+            width: 125px;
+            height: 125px;
+            border: 3px solid black;
+            padding: 50px 50px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 57, 57);
+        }
+        .correct{
+            display: flex;
+            width: 125px;
+            height: 125px;
+            border: 3px solid black;
+            padding: 50px 50px;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Great Number Game!</h1>
+        <p>{{session['num']}}</p>
+        <p>I am thinking of a number between 1 and 100</p>
+        <form action="/answer" method="post">
+            <div>
+                <p class="takeaguess">Take a Guess!</p>
+            </div>
+        <div class="popup">
+        {% if 'answer' in session: %}
+            {% if session['answer'] == session['num'] %}
+                <div>
+                    <h2 class="correct">You got the number!</h2>
+                    <a href="/reset" class="reset">Play Again</a>
+                </div>
+            {% elif session['answer'] < session['num'] %}
+                <div>
+                    <h2 class="wrong">Too Low!!!</h2>
+                </div>
+            {% else %}
+                <div>
+                    <h2 class="wrong">Too High!!!</h2>
+                </div>
+            {% endif %}
+        {% endif %}
+        </div>
+        <div>
+            <input type="text" class="box" name="answer">
+        </div>
+            <input type="submit" value="Guess">
+        </form>
+        <p>{{session['count']}} guess(es)</p>
+    </div>
+</body>
+</html>

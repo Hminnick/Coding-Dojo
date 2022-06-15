@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .yourgold{
+            display: flex;
+        }
+        .pocket{
+            border: 2px solid black;
+            margin-left: 10px;
+            width: 150px;
+            text-align: center;
+        }
+        .routes{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 30px 10px;
+
+        }
+        .box{
+            border: 2px solid black;
+            width: 225px;
+            height: 155px;
+            text-align: center;
+            padding: 10px;
+        }
+        .boxhead{
+            margin: 10px;
+        }
+        form{
+            margin-top: 25px;
+        }
+        .button,#reset{
+            border: 2px solid black;
+            padding: 3px;
+            box-shadow: 3px 3px black;
+        }
+        .log{
+            border: 3px black solid;
+            overflow: scroll;
+        }
+        #reset{
+            margin: 20px;
+        }
+        .activities{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="yourgold">
+            <label class="currency" for="gold">Your Gold:</label>
+            <p class="pocket">{{session['money']}}</p>
+        </div>
+        <div class="routes">
+            <div class="box">
+                <h1 class="boxhead">Farm</h1>
+                <p class="income">(earns 10-20 gold)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="farm" />
+                    <input class="button" type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="boxhead">Cave</h1>
+                <p class="income">(earns 5-10 gold)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="cave" />
+                    <input class="button" type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="boxhead">House</h1>
+                <p class="income">(earns 2-5 gold)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="house" />
+                    <input class="button" type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+            <div class="box">
+                <h1 class="boxhead">Casino</h1>
+                <p class="income">(earns/takes 0-50 gold)</p>
+                <form action="/process_money" method="post">
+                    <input type="hidden" name="building" value="casino" />
+                    <input class="button" type="submit" value="Find Gold!"/>
+                </form>
+            </div>
+        </div>
+        <div class="activities">
+            <label class="activities" for="log">Activities:</label>
+            <form action="/">
+                <input type="text" class="log" rows="10" cols="100">
+            </form>
+        </div>
+        <div class="reset">
+            <a href="/reset"><button id="reset">Restart</button></a>
+        </div>
+    </div>
+</body>
+</html>
